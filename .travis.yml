@@ -7,7 +7,7 @@ deploy:
     branch: master
     tags: true
 install:
-  - yarn instll
+  - yarn install
 script: 
   - docker build -t fewbox/sample-istio-apigateway:$TRAVIS_TAG .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
