@@ -1,0 +1,23 @@
+{
+  "name": "sample-istio-apigateway",
+  "version": "0.0.1",
+  "description": "NodeJS ApiGateway service for Istio.",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FewBox/Sample-Istio-ApiGateway.git"
+  },
+  "author": "landpy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FewBox/Sample-Istio-ApiGateway/issues"
+  },
+  "homepage": "https://github.com/FewBox/Sample-Istio-ApiGateway#readme",
+  "dependencies": {
+    "moleculer": "^0.13.5",
+    "moleculer-web": "^0.8.5"
+  }
+}

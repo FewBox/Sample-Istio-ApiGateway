@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "7"
+deploy:
+  - on:
+    branch: master
+    tags: true
+install:
+  - yarn instll
+script: 
+  - docker build -t fewbox/sample-istio-apigateway:$TRAVIS_TAG .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push fewbox/sample-istio-apigateway:$TRAVIS_TAG
