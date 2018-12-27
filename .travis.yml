@@ -8,6 +8,8 @@ env:
 install:
   - yarn install
 script:
+  - echo $TRAVIS_TAG
+  - echo $TRAVIS_BRANCH
   # build latest image always
   - docker build -t $DOCKER_REPO_SLUG:latest .
   # build the tagged image
