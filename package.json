@@ -1,21 +1,21 @@
 {
-  "name": "sample-istio-apigateway",
+  "name": "sample-istio-auth",
   "version": "0.0.1",
-  "description": "NodeJS ApiGateway service for Istio.",
+  "description": "NodeJS Auth service for Istio.",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FewBox/Sample-Istio-ApiGateway.git"
+    "url": "git+https://github.com/FewBox/Sample-Istio-Auth.git"
   },
   "author": "landpy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FewBox/Sample-Istio-ApiGateway/issues"
+    "url": "https://github.com/FewBox/Sample-Istio-Auth/issues"
   },
-  "homepage": "https://github.com/FewBox/Sample-Istio-ApiGateway#readme",
+  "homepage": "https://github.com/FewBox/Sample-Istio-Auth#readme",
   "dependencies": {
     "express": "^4.16.4"
   }

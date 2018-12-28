@@ -4,7 +4,7 @@ node_js:
 cache: yarn
 env:
   # Docker slug
-  - DOCKER_REPO_SLUG=fewbox/sample-istio-apigateway
+  - DOCKER_REPO_SLUG=fewbox/sample-istio-auth
 install:
   - yarn install
 script:
