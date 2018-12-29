@@ -11,6 +11,7 @@ spec:
     name: http
   selector:
     app: sample-istio-auth
+---
 # Deployment #
 apiVersion: extensions/v1beta1
 kind: Deployment
