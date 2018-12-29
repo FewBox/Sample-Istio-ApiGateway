@@ -1,0 +1,31 @@
+# Service #
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-istio-auth
+  labels:
+    app: sample-istio-auth
+spec:
+  ports:
+  - port: 80
+    name: http
+  selector:
+    app: sample-istio-auth
+# Deployment #
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: sample-istio-auth
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sample-istio-auth
+    spec:
+      containers:
+      - name: sample-istio-auth
+        image: fewbox/sample-istio-auth:latest
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
