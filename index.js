@@ -17,6 +17,9 @@ app.post('/api/signin', (req, res) => {
     if(req.body && req.body.username=='landpy' && req.body.password=='fewbox'){
         res.send({isSuccessful:true, isValid:true});
     }
+    else if(req.body && req.body.username=='pangxiaoliang' && req.body.password=='fewbox'){
+        res.send({isSuccessful:true, isValid:true});
+    }
     else{
         res.send({isSuccessful:true, isValid:false, errorMessage:'Forbidden You don not have permission to access.', errorCode:403});
     }
